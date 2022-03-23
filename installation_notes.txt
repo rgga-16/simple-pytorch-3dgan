@@ -1,0 +1,7 @@
+requires dev version of scikit-image. Install from github at https://github.com/scikit-image/scikit-image
+
+conda install pytorch=1.10.2=cuda112py39h4de5995_1 torchvision cudatoolkit=11.2 -c conda-forge
+conda install -c conda-forge visdom
+python=3.9.7
+
+make a folder called outputs. Put download the pre-trained file and put dcgan_pretrained there.

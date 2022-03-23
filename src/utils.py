@@ -46,7 +46,8 @@ def getVoxelFromMat(path, cube_len=64):
 
 
 def getVFByMarchingCubes(voxels, threshold=0.5):
-    v, f = sk.marching_cubes_classic(voxels, level=threshold)
+    # v, f = sk.marching_cubes_classic(voxels, level=threshold)
+    v, f ,normals,values= sk.marching_cubes(voxels,level=threshold,method='lewiner')
     return v, f
 
 
